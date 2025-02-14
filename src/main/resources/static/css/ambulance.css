@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #d9534f;
+    border-bottom: 2px solid #d9534f;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #c9302c;
+}
+
+p, ul {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+blockquote {
+    font-style: italic;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-left: 5px solid #d9534f;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+a {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Emergency Contact Styling */
+strong {
+    color: #d9534f;
+}
+
+p .highlight {
+    background-color: #ffe6e6;
+    padding: 5px;
+    border-radius: 4px;
+}

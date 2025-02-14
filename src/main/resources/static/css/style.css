@@ -1,0 +1,582 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* root color  */
+:root{
+    --blue:#0188df;
+    --black:#444d53;
+    --wight:#fff;
+}
+
+/* custom css  */
+*{
+    font-family: "Roboto", serif;
+    margin: 0; padding: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    transition: all linear .2S;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+     
+}
+
+/* button */
+.button{
+    height: 3rem;
+    width: 15rem;
+    background: var(--blue);
+    color: var(--wight);
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    border: .1rem solid var(--blue);
+}
+
+.button:hover{
+    border: .1rem solid var(--black);
+    background: var(--wight);
+    color: var(--blue);
+    letter-spacing: .2rem;
+}
+
+/* service heading  */
+.services .heading{
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    padding-top: 8rem;
+    color: var(--blue);
+}
+
+
+/* service title  */
+.services .title{
+    text-align: center;
+    padding: 0rem 1rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: 300;
+}
+ /* doctors heading  */
+.doctors .heading{
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    padding-top: 8rem;
+    color: var(--blue);
+}
+
+
+/* doctors title  */
+.doctors .title{
+    text-align: center;
+    padding: 0rem 1rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: 300;
+}
+
+/* contact heading  */
+.contact .heading{
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    padding-top: 8rem;
+    color: var(--blue);
+}
+
+
+/* contact title  */
+.contact .title{
+    text-align: center;
+    padding: 0rem 1rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: 300;
+}
+
+/* appointment heading  */
+.appointment .heading{
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    padding-top: 8rem;
+    color: var(--blue);
+}
+
+
+/* appointment title  */
+.appointment .title{
+    text-align: center;
+    padding: 0rem 1rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: 300;
+}
+
+/* header navbar section start  */
+    header{
+        width: 100%;
+        background: var(--wight);
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 5rem;
+        z-index: 1000;
+    }
+
+    /* logo name  */
+    header a{
+        color: var(--black);
+    }
+    header a:hover{
+        color: var(--blue);
+    }
+    header .logo {
+        font-size: 3rem;
+    }
+    header .logo span{
+        color: var(--blue);
+    }
+
+/* navbar links */
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin: 1rem;
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    color: var(--black);
+}
+header .navbar ul li a:hover{
+    color: var(--blue);
+}
+
+/* header navbar section end */
+
+/* home section start */
+.home {
+    min-height: 100vh;
+    padding: top 10rm; ;
+}
+.home .row{
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content: space-around;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.home .row .images img{
+    height: 75vh;
+    width: 100%;
+
+}
+.home .content h1{
+    font-size: 3rem;
+    color: var(--black);
+    text-align: center;
+}
+.home .content h1 span{
+    color: var(--blue);
+}
+.home .content p{
+    font-size: 1.7rem;
+    color: var(--black);
+
+}
+
+/* home section ends */
+
+/* services section start */
+
+.services .about{
+    padding: 4rem 0;
+}
+
+.services .about .box{
+    width: 75%;
+    margin: 4rem auto;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: var(--wight);
+   
+}
+.services .about .box .image{
+    height: 40rem;
+    width: 50%;
+}
+
+.services .about .box .image img{
+    height: 100%;
+    width: 100%;
+}
+
+.services .about .box .content{
+    height: 100%;
+    width: 50%;
+    padding: 2rem;
+}
+.services .about .box .content h3{
+    font-size: 2.5rem;
+    color: var(--blue);
+    display: flex;
+    align-items: start;
+
+}
+.services .about .box .content p{
+    font-size: 1.2rem;
+    color: var(--black);
+    padding: .7rem;
+    align-items: start;
+}
+.services .about .box:nth-child(even){
+    flex-flow: row-reverse;
+}
+
+
+/* doctors section starts */
+
+.doctors .about{
+               
+    text-align: center;
+    margin: 8px 0;        
+    padding: 20px 15px;   
+    border-radius: 5px;  
+    font-size: 2.5rem;
+    transition: 0.3s;
+}
+.doctors .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.doctors .content .box{
+    width: 30rem;
+    margin: 2rem 1rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+
+}
+.doctors .content .box img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+.doctors .content .box .subcontent{
+    padding: 1rem 1.3rem;
+}
+
+.doctors .content .box .subcontent h2{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--black);
+}
+
+.doctors .content .box .subcontent h2:hover{
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.doctors .content .box .subcontent p{
+    font-size: 1.7rem;
+    text-align: center;
+}
+.doctors .content .box .subcontent .icon{
+    text-align: center;
+}
+
+.doctors .content .box .subcontent .icon a{
+    font-size: 2rem;
+    color: var(--blue);
+    margin: 1rem;
+    text-align: center;
+}
+
+
+/* .doctors .about ul li{
+    margin: 5px;
+    list-style-type: none;
+} */
+/* doctors section ends */
+
+.contact .about ul li{
+    margin: 5px;
+    list-style-type: none;
+}
+.contact .about{
+    text-align: center;
+    margin: 8px 0;        
+    padding: 20px 15px;   
+    border-radius: 5px;  
+    font-size: 2.5rem;
+    transition: 0.3s;
+
+}
+.contact .about ul li span{
+    color: var(--blue);
+}
+
+.appointment .form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 35rem;
+    padding-left: 35rem;
+}
+
+.appointment .form input{
+
+    height: 4rem;
+    width: 100%;
+    background: var(--wight);
+    border-radius: 5rem;
+    color: var(--blue);
+    padding: 0 1rem;
+    margin: 0.1rem;
+    font-size: 1.7rem;
+    
+}
+.appointment .form label{
+    padding-top: 2rem;
+    padding-left: 1rem;
+    height: 4rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.appointment .form input:focus ,label:focus{
+    border: .2rem solid var(--blue);
+
+
+}
+.appointment .form input[type="submit"]{
+    width: 17rem;
+    background: var(--blue);
+    color: var(--wight);
+    cursor: pointer;
+    font-size: 2rem;
+    
+
+}
+.appointment .form input[type="submit"]:hover{
+    background: var(--wight);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
+.appointment .form select{
+    font-size: 1.8rem;
+    align-self: start;
+    padding-left: 0.7rem;
+    color: var(--blue);
+    width: 100%;
+    border-radius: 5rem;
+    border: .2rem solid var(--black);
+}
+.appointment .form select:focus{
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
+
+
+/* footer section starts */
+.footer{
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.footer .box{
+    width: 30rem;
+    margin: 2rem;
+    text-align: center;
+}
+.footer .box:nth-child(1){
+    text-align: left;
+}
+
+.footer .box .logo{
+    font-size: 3rem;
+    padding: 2rem 0;
+    color: var(--wight);
+}
+.footer .box .logo:hover{
+    color: var(--blue);
+}
+.footer .box p{
+    font-size: 1.2rem;
+    color: var(--wight);
+}
+.footer .box a{
+    font-size: 2rem;
+    color: var(--wight);
+    display: block;
+    padding: .2rem 0;
+}
+.footer .box a:hover{
+    text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .appointment .form {
+        padding-right: 15rem;
+        padding-left: 15rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    .home .row {
+        width: 95%;
+    }
+
+    .home .row .images img {
+        height: 50vh;
+    }
+
+    .services .about .box {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .services .about .box .image,
+    .services .about .box .content {
+        width: 100%;
+    }
+
+    .services .about .box .image {
+        height: 30rem;
+    }
+
+    .doctors .content .box {
+        width: 45%;
+    }
+
+    .appointment .form {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    .footer .box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    header .navbar ul li {
+        margin: 0.5rem;
+    }
+
+    header .navbar ul li a {
+        font-size: 1.8rem;
+    }
+
+    .home .row .images img {
+        height: 40vh;
+    }
+
+    .home .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .services .about .box {
+        width: 95%;
+    }
+
+    .doctors .content .box {
+        width: 100%;
+    }
+
+    .appointment .form {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .footer .box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .box:nth-child(1) {
+        text-align: center;
+    }
+
+    /* Mobile Navigation */
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    header .logo {
+        margin-bottom: 1rem;
+    }
+
+    header .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .services .about .box .image {
+        height: 25rem;
+    }
+
+    .home .row .images img {
+        height: 35vh;
+    }
+
+    header .navbar ul li a {
+        font-size: 1.6rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* footer section ends */
+
